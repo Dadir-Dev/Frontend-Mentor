@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Style - Mobile Design */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-size: 14px;
+}
+
+.profile {
+    background-color: hsl(0, 0%, 12%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+}
+
+.profile .personal-info img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile .personal-info h1 {
+    margin: 5px 0;
+}
+
+.profile .personal-info .location {
+    font-size: 18px;
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+}
+
+.profile .personal-info .description {
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+}
+
+.profile .personal-info .social-media{
+    margin: 20px 0;
+}
+
+.personal-info .social-media ul{
+    list-style: none;
+    padding: 0;
+}
+
+.personal-info .social-media li{
+    
+    margin: 10px 0;
+    
+    
+}
+
+.profile .personal-info .social-media a {
+     display: block;
+     width: 100%;
+     background-color:hsl(0, 0%, 20%) ;
+     padding: 5px 10px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.profile .personal-info .social-media :is(a:hover, a:focus) { 
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(75, 94%, 57%);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+}
+
+/* Desktop Design */
