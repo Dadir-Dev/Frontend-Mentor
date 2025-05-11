@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+.bold{
+    font-weight: 700;
+}
+
+ol,
+ul{
+    padding: 0 25px;
+    /* list-style-position: inside; */
+}
+
+ul li::marker{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    font-size: 0.8rem;
+    vertical-align:middle;
+    
+}
+
+ol li::marker{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+
+/* Base Design - Mobile-First Approach */
+body{
+    font-family: 'Outfit', serif;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 100vh;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    line-height: 1.2;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+}
+
+header h1{
+    font-family: 'Young Serif', serif;
+    font-size: 2rem;
+    color: hsl(24, 5%, 18%);
+    text-align: left;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.container .recipe-details .prep-time{
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.container .recipe-details .prep-time h3{
+    font-size: 1.5rem;
+    color: hsl(332, 51%, 32%);
+}
+
+
+.container  li{
+    margin: 10px 0;
+    /* font-size: 1.2rem; */
+    padding-left: 10px;
+}
+
+.container h2{
+    font-family: 'Young Serif', serif;
+    font-size: 1.5rem;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+}
+
+.container, .ingredients, .instructions, .nutrition{
+    margin-top: 30px;
+}
+
+.hr{
+    height: 1px;
+    background-color: hsl(0, 0%, 80%);
+    margin: 30px 0;
+}
+
+.container .nutrition table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container .nutrition table :is(th, td){
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.container .nutrition table th{
+    font-weight: 500;
+}
+
+.container .nutrition table td{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+.container .nutrition table tr:last-child :is(td, th) {
+    border-bottom: none;
+}
+
+    
+
+.attribution { 
+    font-size: 1rem; 
+    text-align: center;
+    margin: 20px 0;
+    padding:0 30px;
+
+ }
+.attribution a { 
+        color: hsl(228, 45%, 44%);
+     }
+
+/* 2. Desktop styles */
+@media (min-width: 768px) {
+  body {
+    padding: 3rem;
+    background-color: hsl(30, 54%, 90%);
+    
+  }
+
+  main {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    min-height: 60vh;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+    header img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+
+    .container {
+        max-width: 800px;
+        /* margin: 0 auto; */
+        padding: 0 10px;
+    }
+}
