@@ -15,7 +15,7 @@
     --Green-700: hsl(158, 42%, 18%);
 
     /* FONTS */
-    --FS-XL: clamp(2.5rem, 5vw, 3rem);
+    --FS-XL: clamp(2rem, 5vw, 3rem);
     --FS-BASE: 14PX;
 }
 
