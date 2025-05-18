@@ -135,7 +135,7 @@ body {
 
 @media (min-width: 768px) {
     body{
-        background-color: var(--purple-light);
+        background-color: var(--grey-light);
     }
     .testimonial-grid{
         grid-template-columns: repeat(4, 1fr);
