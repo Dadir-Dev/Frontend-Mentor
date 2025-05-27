@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --primary-subdued: hsl(254, 88%, 90%);
+  --primary-base: hsl(256, 67%, 59%);
+  --accent-subdued: hsl(31, 66%, 93%);
+  --accent-base: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 96%);
+  --black: hsl(0, 0%, 7%);
+
+  --fs-reg: 1.25rem;
+
+  --fs-md: 2.25rem;
+  --fs-lg: 3rem;
+  --fs-xl: 4rem;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--off-white);
+    color: var(--black);
+    /* line-height: 1.5; */
+    padding: min(7%, 20px);
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-areas:
+    "create-post social-media social-media schedule"
+    "create-post accounts calendar schedule"
+    "ai accounts calendar schedule"
+    "ai growth best-time best-time"; ;
+    
+}
+
+h1 {
+    font-size: var(--fs-lg);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.italic {
+    font-style: italic;
+    color: var(--white);
+}
+
+h1 span {
+    display: inline-block;
+    font-size: var(--fs-lg);
+    color: var(--accent-base);
+}
+
+h2 {
+    line-height: 1;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* overflow: hidden; */
+}
+
+.social-media{
+    grid-area: social-media;
+    background-color: var(--primary-base);
+    color: var(--white);
+    text-align: center;
+}
+
+.social-media img{
+    padding: 0.5rem 2.5rem;
+}
+
+.social-media p{
+    margin-bottom: 1rem;
+    font-size: var(--fs-reg);
+}
+
+
+.accounts{
+    grid-area: accounts;
+    background-color: var(--white);
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.accounts h2{
+    margin-top: 1rem;
+}
+
+.accounts img {
+    border-radius: 2rem;
+}
+
+.calendar{
+    grid-area: calendar;
+    background-color: var(--accent-base);
+    position: relative;
+}
+
+.calendar img {
+    padding: 0.5rem 2.5rem;
+    margin-top: 1rem;
+
+}
+
+.schedule{
+    grid-area: schedule;
+    background-color: var(--primary-subdued);
+}
+
+.best-time{
+    grid-area: best-time;
+    background-color: var(--primary-base);
+}
+
+.growth{
+    grid-area: growth;
+    background-color: var(--white);
+}
+
+.create-post{
+    grid-area: create-post;
+    background-color: var(--accent-subdued);
+}
+
+.ai {
+    grid-area: ai;
+    background-color: var(--accent-base);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
