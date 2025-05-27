@@ -296,3 +296,27 @@ body {
         margin-top: 6rem; ;
     }
 }
+
+/* Footer */
+
+
+.attribution { 
+    font-size: var(--fs-footer) ; 
+    text-align: center;
+    color: darkblue;
+    margin: 2rem;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.attribution a:hover { 
+    background-color: darkblue;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
