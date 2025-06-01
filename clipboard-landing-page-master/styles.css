@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --Green-500: hsl(171, 66%, 44%);
+    --Blue-100: hsl(233, 100%, 69%);
+    --Gray-700: hsl(210, 10%, 33%);
+    --Gray-500: hsl(201, 11%, 66%);
+    --light-gray: hsl(0, 0%, 92%);
+
+    /* Font Sizes */
+    --fs: clamp(1rem, 5vw, 1.125rem);
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: hsl(200, 30%, 97%);
+    color: var(--Gray-700);
+    line-height: 1.5;
+    text-align: center;
+    font-size: var(--fs);
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+/* Typography */
+
+h1, h2, h3 {
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--Gray-500);
+    max-width: 700px;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+    
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* My Code */
+
+
+
+/* button a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+} */
+
+.btn-ios {
+    background-color: var(--Green-500);
+    box-shadow: 0 2px 2px hsl(171, 66%, 34%);
+    border: 1px solid hsl(171, 66%, 34%);
+}
+
+.btn-mac {
+    background-color: var(--Blue-100);
+    box-shadow: 0 2px 2px hsl(233, 100%, 59%);
+    border: 1px solid hsl(233, 100%, 59%);
+}
+
+.btn:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    /* opacity: 0.8; */
+    filter: brightness(150%);
+}
+
+.download-buttons {
+    margin-top: 2.5rem;
+}
+
+/* Header */
+
+.header {
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #fff;
+    padding: 1.5rem 0;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.header .logo {
+    margin-bottom: 50px;
+}
+
+/* Feature Section */
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.snippet-image {
+    flex: 1;
+    position: relative;
+    left: -50px;
+}
+
+.snippets-list {
+    flex: 1;
+    text-align: left;
+}
+
+.snippet-item {
+    margin-bottom: 50px;
+}
+
+.snippet-item h3 {
+    margin-bottom: 10px;
+}
+
+.snippet-item p {
+    margin-bottom: 0;
+}
+
+/* Workflow Section */
+.workflow-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.workflow-item {
+    flex: 1;
+}
+
+.workflow-item img {
+    height: 32px;
+    margin-bottom: 20px;
+}
+
+/* Companies Section */
+.tech-companies {
+    padding: 60px 0;
+}
+
+.tech-companies .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    gap: 60px;
+    padding: 40px 0;
+    border: 3px solid var(--light-gray);
+}
+
+.tech-companies img {
+    max-width: 100px;
+    height: auto;
+    opacity: 0.7;
+    transition: 0.3s ease;
+}
+
+.tech-companies img:hover {
+    opacity: 1;
+    /* transform: scale(1.1); */
+}
+
+/* Footer */
+footer {
+    background-color: var(--light-gray);
+    padding: 40px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+footer .logo img {
+    height: 60px;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 80px;
+    list-style: none;
+    text-align: left;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--Gray-700);
+    transition: 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: var(--Green-500);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.attribution { 
+    font-size: var(--fs-footer) ; 
+    text-align: center;
+    color: darkblue;
+    margin: 2rem;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.attribution a:hover { 
+    background-color: darkblue;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+/* Responsive Desing */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .snippet-image {
+        left: 0;
+        margin-bottom: 30px;
+    }
+
+    .snippets-list {
+        text-align: center;
+    }
+
+    .workflow-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    footer .footer-nav {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
